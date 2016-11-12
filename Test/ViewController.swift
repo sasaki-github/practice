@@ -31,4 +31,15 @@ class ViewController: UIViewController {
     @IBAction func exitButtonClicked() {
         exit(1);
     }
+    
+    @IBAction func switchChange() {
+        if (view.backgroundColor?.isEqual(UIColor.yellow))!
+        {
+            //背景色を白に！
+            view.backgroundColor = UIColor.white;
+        } else {
+            //背景色を黄色に！
+            view.backgroundColor = UIColor.yellow;
+        }
+    }
 }
