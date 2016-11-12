@@ -13,11 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        //タップ時の処理を設定
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +29,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func exitButtonClicked() {
-        applicationFinishedRestoringState();
+        exit(1);
     }
 }
